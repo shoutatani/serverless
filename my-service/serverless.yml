@@ -57,11 +57,11 @@ provider:
 functions:
   hello:
     handler: handler.hello
-    events:
-     - schedule:
-        name: scheduled-hello
-        description: 'This description was created by sls configure.' 
-        rate: cron(0/2 * * * ? *)
+#    events:
+#     - schedule:
+#        name: scheduled-hello
+#        description: 'This description was created by sls configure.' 
+#        rate: cron(0/2 * * * ? *)
   hello_multiple_called:
     handler: handler.hello_multiple_called
 #    The following are a few example events you can configure
